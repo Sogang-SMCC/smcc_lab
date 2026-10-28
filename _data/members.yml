@@ -19,7 +19,7 @@ current:
       - { name: 유진아, email: sgn07230@naver.com, photo: jyu.jpg }
       - { name: 정우석, email: ooojws@naver.com, photo: jws.jpg }
       - { name: 김세중, email: sejungkim01@gmail.com, photo: sjkim.jpg }
-      - { name: 고서연, email: ksymarie@sogang.ac.kr, photo: img_4810.jpg }
+      - { name: 고서연, email: ksymariem@sogang.ac.kr, photo: img_4810.jpg }
 
 alumni:
   - title: Ph. D. Graduates
