@@ -46,7 +46,7 @@ nav_order: 1
       <div class="member-card">
         <img src="{{ img_base }}{{ p.photo }}" alt="{{ p.name }}" loading="lazy">
         <div class="name">{{ p.name }}</div>
-        <div class="email">{{ p.email | replace: "@", "<wbr>@" }}</div>
+        <div class="email"><a href="mailto:{{ p.email }}">{{ p.email | replace: "@", "<wbr>@" }}</a></div>
       </div>
     {% endfor %}
   </div>
@@ -60,7 +60,7 @@ nav_order: 1
       <div class="member-card">
         <img src="{{ img_base }}{{ p.photo }}" alt="{{ p.name }}" loading="lazy">
         <div class="name">{{ p.name }}</div>
-        <div class="email">{{ p.email | replace: "@", "<wbr>@" }}</div>
+        <div class="email"><a href="mailto:{{ p.email }}">{{ p.email | replace: "@", "<wbr>@" }}</a></div>
         {% for line in p.info %}<div>{{ line }}</div>{% endfor %}
       </div>
     {% endfor %}
