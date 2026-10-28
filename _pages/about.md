@@ -1,34 +1,38 @@
 ---
 layout: about
-title: about
+title: Welcome
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+subtitle: Department of Chemistry, <a href='https://www.sogang.ac.kr/'>Sogang University</a> · 서강대학교 화학과
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<div class="row">
+  <div class="col-md-6">
+    {% include figure.liquid path="assets/img/smcc/campus.jpg" class="img-fluid rounded z-depth-1" alt="Sogang University" %}
+  </div>
+  <div class="col-md-6 mt-3 mt-md-0">
+    <p><strong>Soft Matter Computational Chemistry Lab</strong><br>
+    Ricci Science Hall 1217, 1215<br>
+    Department of Chemistry, Sogang University<br>
+    Seoul 04107, Korea<br>
+    TEL: 82-2-716-8889<br>
+    e-mail: <a href="mailto:bjsung@sogang.ac.kr">bjsung@sogang.ac.kr</a></p>
+    <p>서강대학교 화학과 리찌과학관 1217호, 1215호<br>
+    서울특별시 마포구 백범로 35<br>
+    전화: 02-716-8889<br>
+    이메일: <a href="mailto:bjsung@sogang.ac.kr">bjsung@sogang.ac.kr</a></p>
+  </div>
+</div>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+#### Molecular Simulations at multiscales
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+"연성 소재 전산화학 연구실"은 컴퓨터 시뮬레이션, 인공지능, 통계열역학, 양자화학을 포함한 여러가지 이론적 방법을 이용하여 재료물리화학, 생물물리화학 등 다양한 분야를 연구하고 있다.
+자세한 내용은 [Research]({{ '/research/' | relative_url }}) 페이지를 참고하세요.

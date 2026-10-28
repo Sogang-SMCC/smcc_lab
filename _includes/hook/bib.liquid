@@ -1,0 +1,2 @@
+{% comment %}Site hook called by al_folio_core bib.liquid: trim the newline that additional_info leaves before ", <year>".{% endcomment %}
+{% capture entrytype %}{{ entrytype | strip }}{% endcapture %}
