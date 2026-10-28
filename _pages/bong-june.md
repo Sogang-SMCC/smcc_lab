@@ -7,8 +7,14 @@ nav: false
 ---
 
 <style>
+  /* Education, Career, Contact sit close together next to the photo, as on the old site */
   article h4 {
-    margin-top: 2.5rem;
+    margin-top: 1rem;
+  }
+  /* Awards, Research Interests, Selected Publications are separate blocks */
+  article h4.prof-block {
+    clear: both;
+    margin-top: 4rem;
   }
 </style>
 
@@ -36,9 +42,7 @@ nav: false
 - E-mail: [bjsung@sogang.ac.kr](mailto:bjsung@sogang.ac.kr)
 - Office: 리치과학관 1217호 (Ricci Science Hall 1217)
 
-<div class="clearfix"></div>
-
-#### Awards
+<h4 class="prof-block">Awards</h4>
 
 1. 신국조 학술상, 대한화학회 물리화학분과회, 2023/5
 2. 젊은물리화학자상, 대한화학회 물리화학분과회, 2019/10
@@ -51,7 +55,7 @@ nav: false
 9. 서강대학교 자연과학부 Teaching Excellence Award, 2019
 10. 서강대학교 자연과학부 Teaching Excellence Award, 2021
 
-#### Research Interests
+<h4 class="prof-block">Research Interests</h4>
 
 1. Electrical conductivity and structure of polymer nanocomposites
 2. Dynamics and structure of fluids in nano-porous materials
@@ -60,7 +64,7 @@ nav: false
 5. Polymer Reference Interaction Site Model (PRISM) integral equation theory
 6. Phase transition and structure of associating copolymers
 
-#### Selected Publications
+<h4 class="prof-block">Selected Publications</h4>
 
 {% include smcc_style.liquid %}
 <div class="publications">
