@@ -2,7 +2,6 @@
 layout: page
 title: Members
 permalink: /members/
-description: Group Members
 nav: true
 nav_order: 1
 ---
@@ -18,6 +17,7 @@ nav_order: 1
   .member-pi { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; margin: 1rem 0 2.5rem; }
   .member-pi img { width: 260px; max-width: 100%; border-radius: 6px; }
   .member-pi .name { font-size: 1.2rem; font-weight: 600; }
+  .member-group { font-size: 1.25rem; margin-top: 1.5rem; }
 </style>
 
 {% assign m = site.data.members %}
@@ -35,7 +35,7 @@ nav_order: 1
 
 {% for section in m.current %}
 {% if forloop.first %}<h2>Current Members</h2>{% endif %}
-  <h3>{{ section.title }}</h3>
+  <h3 class="member-group">{{ section.title }}</h3>
   <div class="member-grid">
     {% for p in section.people %}
       <div class="member-card">
@@ -49,7 +49,7 @@ nav_order: 1
 
 {% for section in m.alumni %}
 {% if forloop.first %}<h2>Alumni</h2>{% endif %}
-  <h3>{{ section.title }}</h3>
+  <h3 class="member-group">{{ section.title }}</h3>
   <div class="member-grid">
     {% for p in section.people %}
       <div class="member-card">
