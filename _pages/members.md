@@ -21,7 +21,7 @@ nav_order: 1
   .member-pi { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; margin: 1rem 0 2.5rem; }
   .member-pi img { width: 260px; max-width: 100%; border-radius: 6px; }
   .member-pi .name { font-size: 1.2rem; font-weight: 600; }
-  .member-section { font-weight: 500; }
+  .member-section { font-weight: 500; margin-top: 4rem; margin-bottom: 2.5rem; }
   .member-group { font-size: 1.25rem; font-weight: 300; margin-top: 1.5rem; }
 </style>
 
