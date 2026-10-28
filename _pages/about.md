@@ -14,6 +14,12 @@ latest_posts:
   enabled: false
 ---
 
+<style>
+  .post-title {
+    font-weight: 700;
+  }
+</style>
+
 <div class="row">
   <div class="col-md-6">
     {% include figure.liquid path="assets/img/smcc/campus.jpg" class="img-fluid rounded z-depth-1" alt="Sogang University" %}
@@ -38,7 +44,7 @@ latest_posts:
 자세한 내용은 [Research]({{ '/research/' | relative_url }}) 페이지를 참고하세요.
 
 <h2 class="mt-5 pt-3">
-  <a href="{{ '/publications/' | relative_url }}" style="color: inherit; font-weight: 700">Selected Publications</a>
+  <a href="{{ '/publications/' | relative_url }}" style="color: inherit; font-weight: 400">Selected Publications</a>
 </h2>
 
 {% include smcc_pub_style.liquid %}
