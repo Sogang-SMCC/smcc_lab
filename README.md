@@ -2,7 +2,7 @@
 
 서강대학교 화학과 연성 소재 전산화학 연구실 (성봉준 교수) 홈페이지 저장소입니다.
 
-- Site: https://sogang-smcc.github.io/smcc_lab/
+- Site: https://sogang-smcc.github.io/
 - Built with [Jekyll](https://jekyllrb.com/) and the [al-folio](https://github.com/alshedivat/al-folio) theme (MIT License)
 
 ## 연구실 소개
@@ -133,5 +133,5 @@ Ruby 3.3 이상이 필요합니다.
 
 ```bash
 bundle install
-bundle exec jekyll serve   # http://localhost:4000/smcc_lab/
+bundle exec jekyll serve   # http://localhost:4000/
 ```
