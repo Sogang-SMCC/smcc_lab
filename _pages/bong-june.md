@@ -28,7 +28,7 @@ nav: false
 
 - Telephone: 82-2-705-8880
 - E-mail: [bjsung@sogang.ac.kr](mailto:bjsung@sogang.ac.kr)
-- Office: 리치 과학관 1217호 (Ricci Science Hall 1217)
+- Office: 리치과학관 1217호 (Ricci Science Hall 1217)
 
 <div class="clearfix"></div>
 

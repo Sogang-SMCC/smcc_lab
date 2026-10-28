@@ -25,7 +25,7 @@ latest_posts:
     Seoul 04107, Korea<br>
     TEL: 82-2-716-8889<br>
     e-mail: <a href="mailto:bjsung@sogang.ac.kr">bjsung@sogang.ac.kr</a></p>
-    <p>서강대학교 화학과 리찌과학관 1217호, 1215호<br>
+    <p>서강대학교 화학과 리치과학관 1217호, 1215호<br>
     서울특별시 마포구 백범로 35<br>
     전화: 02-716-8889<br>
     이메일: <a href="mailto:bjsung@sogang.ac.kr">bjsung@sogang.ac.kr</a></p>
