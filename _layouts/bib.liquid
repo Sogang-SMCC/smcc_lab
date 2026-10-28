@@ -1,0 +1,76 @@
+---
+---
+{%- comment -%}
+  SMCC override of al_folio_core's bib.liquid: renders each entry in the old lab-site format
+  124. “Title”, A. Author, B. Author*, Journal 148, 24151 (2026)
+  Lab members listed in `bold_authors` (1-based author positions) are bold; Prof. Sung is bold blue.
+  Styles live in _includes/smcc_pub_style.liquid.
+{%- endcomment -%}
+{%- assign bold_idx = entry.bold_authors | split: ' ' -%}
+<div class="smcc-pub" id="{{ entry.key }}">
+  {%- if entry.smcc_no -%}
+    <span class="smcc-no">{{ entry.smcc_no }}.</span>
+  {% endif -%}
+  “{{ entry.title }}”,
+  {% for author in entry.author_array -%}
+    {%- assign last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+    {%- assign marks = author.last | remove: last_name -%}
+    {%- assign idx = forloop.index | append: '' -%}
+    {%- if forloop.first == false -%}
+      {%- if forloop.last -%}
+        {%- if forloop.length > 2 %},{% endif %} and
+      {% else -%}
+        ,
+      {% endif -%}
+    {%- endif -%}
+    {%- if site.scholar.last_name contains last_name and site.scholar.first_name contains author.first -%}
+      <span class="smcc-pi">
+        {{- author.first }}
+        {{ last_name -}}
+        {{- marks -}}
+      </span>
+    {%- elsif bold_idx contains idx -%}
+      <span class="smcc-member">
+        {{- author.first }}
+        {{ last_name -}}
+      </span>
+      {{- marks }}
+    {%- else -%}
+      {{ author.first }}
+      {{ last_name -}}
+      {{- marks }}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if entry.journal -%}
+    , <span class="smcc-journal">{{ entry.journal }}</span>
+    {%- if entry.volume %} {{ entry.volume }}{% endif -%}
+    {%- if entry.number %}({{ entry.number }}){% endif -%}
+    {%- if entry.pages %}, {{ entry.pages | replace: '--', '–' }}{% endif -%}
+  {%- endif -%}
+  {%- if entry.note %}
+    (<em>{{ entry.note }}</em>)
+  {%- endif %}
+  ({{ entry.year }})
+  {%- if entry.award %} - {{ entry.award }}{% endif -%}
+  {%- if entry.doi or entry.html or entry.pdf -%}
+    <span class="smcc-links">
+      {%- if entry.doi %}
+        <a href="https://doi.org/{{ entry.doi }}">[DOI]</a>
+      {%- endif -%}
+      {%- if entry.html -%}
+        {%- if entry.html contains '://' %}
+          <a href="{{ entry.html }}">[Link]</a>
+        {%- else %}
+          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}">[Link]</a>
+        {%- endif -%}
+      {%- endif -%}
+      {%- if entry.pdf -%}
+        {%- if entry.pdf contains '://' %}
+          <a href="{{ entry.pdf }}">[PDF]</a>
+        {%- else %}
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}">[PDF]</a>
+        {%- endif -%}
+      {%- endif -%}
+    </span>
+  {%- endif %}
+</div>

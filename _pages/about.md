@@ -4,7 +4,7 @@ title: Welcome
 permalink: /
 subtitle: Department of Chemistry, <a href='https://www.sogang.ac.kr/'>Sogang University</a> · 서강대학교 화학과
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # rendered below with our own heading
 social: false
 
 announcements:
@@ -36,3 +36,10 @@ latest_posts:
 
 "연성 소재 전산화학 연구실"은 컴퓨터 시뮬레이션, 인공지능, 통계열역학, 양자화학을 포함한 여러가지 이론적 방법을 이용하여 재료물리화학, 생물물리화학 등 다양한 분야를 연구하고 있다.
 자세한 내용은 [Research]({{ '/research/' | relative_url }}) 페이지를 참고하세요.
+
+<h2 class="mt-5 pt-3">
+  <a href="{{ '/publications/' | relative_url }}" style="color: inherit; font-weight: 700">Selected Publications</a>
+</h2>
+
+{% include smcc_pub_style.liquid %}
+{% include selected_papers.liquid %}

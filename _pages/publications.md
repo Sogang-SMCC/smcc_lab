@@ -12,6 +12,7 @@ nav_order: 3
 <!-- Bibsearch Feature -->
 
 {% include bib_search.liquid %}
+{% include smcc_pub_style.liquid %}
 
 <div class="publications">
 

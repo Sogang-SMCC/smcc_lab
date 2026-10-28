@@ -28,7 +28,6 @@
 
 - 사진 파일 이름은 `_`(밑줄)로 시작하면 안 됩니다. Jekyll이 빌드에서 제외합니다.
 - 대표 논문(Welcome, 교수님 페이지에 표시)은 BibTeX 항목에 `selected = {true}`를 넣습니다.
-- 논문 표기: 공동 1저자는 성 뒤에 `†`, 교신저자는 `*` (예: `Sung*, B. J.`).
 
 ### 예시: 새 멤버 추가
 
@@ -84,32 +83,42 @@ albums:
 `_bibliography/papers.bib` 맨 위(`---` 두 줄 아래)에 추가합니다. 같은 해 안에서는 파일에 적힌 순서대로 표시됩니다.
 
 ```bibtex
-@article{hong2026example,
-  abbr            = {JCP},
-  title           = {Paper Title},
-  author          = {Hong†, G. D. and Kim†, C. S. and Sung*, B. J.},
-  journal         = {J. Chem. Phys.},
-  additional_info = {, **164**, 123456},
-  year            = {2026},
+@article{hong2027example,
+  title        = {Paper Title},
+  author       = {Hong†, G. D. and Kim†, C. S. and Lee, Y. and Sung*, B. J.},
+  journal      = {J. Chem. Phys.},
+  volume       = {166},
+  pages        = {123456},
+  year         = {2027},
+  bold_authors = {1 2},
+  smcc_no      = {125},
 }
 ```
 
+위 항목은 이렇게 표시됩니다 (굵은 글씨 = 연구실 멤버, 교수님은 굵은 파랑색, 저널명은 굵은 기울임).
+
+> 125\. “Paper Title”, **G. D. Hong**†, **C. S. Kim**†, Y. Lee, and **B. J. Sung\***, **_J. Chem. Phys._** 166, 123456 (2027)
+
 Publications 페이지는 이 파일에서 자동으로 만들어지고, 연도별로 묶여 표시됩니다.
 
-| 항목              | 설명                                                                                                |
-| ----------------- | --------------------------------------------------------------------------------------------------- |
-| `abbr`            | 제목 왼쪽의 저널 약칭 배지 (선택)                                                                   |
-| `author`          | `성, 이니셜` 형식, 저자 사이는 `and`. 공동 1저자는 성 뒤에 `†`, 교신저자는 `*`                      |
-| `journal`         | 저널명 (기울임꼴로 표시)                                                                            |
-| `additional_info` | 권과 페이지: `, **권**, 페이지`                                                                     |
-| `year`            | 연도 (이 값으로 연도별로 묶임)                                                                      |
-| `note`            | 출판 전 상태: `Submitted`, `Accepted`, `To be submitted`                                            |
-| `selected`        | `{true}`이면 Welcome과 교수님 페이지의 대표 논문에 표시                                             |
-| `award`           | 표지 선정 등 특기 사항. `award_name = {Highlight}`와 함께 쓰면 버튼으로 표시되고 누르면 내용이 나옴 |
-| `doi`, `html`     | DOI 또는 논문 링크를 넣으면 버튼이 생김 (선택)                                                      |
+| 항목           | 설명                                                                                          |
+| -------------- | --------------------------------------------------------------------------------------------- |
+| `title`        | 논문 제목                                                                                     |
+| `author`       | `성, 이니셜` 형식, 저자 사이는 `and`. 공동 1저자는 성 뒤에 `†`, 교신저자는 `*`                |
+| `journal`      | 저널명                                                                                        |
+| `volume`       | 권                                                                                            |
+| `pages`        | 페이지 또는 논문 번호 (범위는 `2000--2008`처럼 하이픈 두 개)                                  |
+| `year`         | 연도 (이 값으로 연도별로 묶임)                                                                |
+| `bold_authors` | 굵게 표시할 연구실 멤버의 저자 순번 (1부터, 공백으로 구분). 교수님은 자동으로 강조되므로 제외 |
+| `smcc_no`      | 논문 번호 (현재 마지막 번호 + 1)                                                              |
+| `note`         | 출판 전 상태: `submitted`, `accepted`, `to be submitted` (기울임꼴로 표시)                    |
+| `selected`     | `{true}`이면 Welcome과 교수님 페이지의 대표 논문에 표시                                       |
+| `award`        | 표지 선정 등 특기 사항. 연도 뒤에 ` - 내용` 형식으로 표시                                     |
+| `doi`, `html`  | DOI 또는 논문 링크를 넣으면 끝에 `[DOI]`, `[Link]` 링크가 생김 (선택)                         |
 
-- 성봉준 교수님(`Sung, B. J.`)은 자동으로 밑줄 강조됩니다.
-- 첫 줄의 키(`hong2026example`)는 겹치지 않게 `첫저자성+연도+제목첫단어`로 만듭니다.
+- 첫 줄의 키(`hong2027example`)는 겹치지 않게 `첫저자성+연도+제목첫단어`로 만듭니다.
+- 출판 전 논문은 `journal`, `volume`, `pages` 없이 `note`만 적습니다. 게재되면 `note`를 지우고 저널 정보를 채웁니다.
+- 표시 형식은 `_layouts/bib.liquid`(구조)와 `_includes/smcc_pub_style.liquid`(굵기·색)에서 바꿀 수 있습니다.
 
 ## 배포
 
