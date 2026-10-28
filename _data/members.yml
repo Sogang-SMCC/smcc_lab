@@ -5,7 +5,7 @@ pi:
   name: 성봉준 교수
   name_en: Prof. Bong June Sung
   email: bjsung@sogang.ac.kr
-  photo: prof_sung.jpg
+  photo: prof_sung.png
   url: /members/bong-june/
 
 current:
@@ -24,39 +24,39 @@ current:
 alumni:
   - title: Ph. D. Graduates
     people:
-      - { name: 권계민, email: kwontim@naver.com, photo: kwongm.jpg, info: [특허청] }
-      - { name: 조현우, email: chohw2000@seoultech.ac.kr, photo: chohw.jpg, info: [서울과학기술대학교, 정밀화학과, 교수] }
-      - { name: 오영훈, email: o.younghoon@gmail.com, photo: image_3.jpg, info: [Eli Lilly and Company] }
-      - { name: 권슬기, email: ksulgio7@sogang.ac.kr, photo: image_4.jpg, info: [Broad Institute of MIT and Harvard, Research Scientist] }
-      - { name: 권태진, email: taejin1112@gmail.com, photo: shapeimage_15.jpg, info: [제주대학교, 화학코스메틱스학과, 교수] }
-      - { name: 박정빈, email: jungbin919191@gmail.com, photo: parkchungbin.jpg, info: [국립순천대학교, 화학교육학과, 교수] }
+      - { name: 권계민, email: kwontim@naver.com, photo: kwongm.png, info: [특허청] }
+      - { name: 조현우, email: chohw2000@seoultech.ac.kr, photo: chohw.png, info: [서울과학기술대학교, 정밀화학과, 교수] }
+      - { name: 오영훈, email: o.younghoon@gmail.com, photo: image_3.png, info: [Eli Lilly and Company] }
+      - { name: 권슬기, email: ksulgio7@sogang.ac.kr, photo: image_4.png, info: [Broad Institute of MIT and Harvard, Research Scientist] }
+      - { name: 권태진, email: taejin1112@gmail.com, photo: shapeimage_15.png, info: [제주대학교, 화학코스메틱스학과, 교수] }
+      - { name: 박정빈, email: jungbin919191@gmail.com, photo: parkchungbin.png, info: [국립순천대학교, 화학교육학과, 교수] }
       - { name: 박형식 박사, email: hue0704@naver.com, photo: naouniosunaou.jpg, info: [삼성 디스플레이] }
   - title: Master Graduates
     people:
-      - { name: 정현태, email: junght@sogang.ac.kr, photo: shapeimage_6.jpg, info: [UW-Madison 박사, 한화토탈] }
-      - { name: 이동춘, email: dclee@sogang.ac.kr, photo: shapeimage_7.jpg, info: [비츠로셀] }
-      - { name: 김유희 (KIST 학연), email: iris1131@nate.com, photo: kimyh.jpg, info: [코스맥스] }
-      - { name: 박창현, email: arimon@sogang.ac.kr, photo: view_submsg.jpg, info: [아모레퍼시픽] }
-      - { name: 염다영 (KIST 학연), email: oduaeodo@naver.com, photo: image_2.jpg, info: [고분자 시험 연구소] }
-      - { name: 진성국 (KIST 학연), email: jinga14@naver.com, photo: image_1.jpg }
-      - { name: 김민정, email: minjung5683@hanmail.net, photo: shapeimage_8.jpg, info: [경인양행] }
-      - { name: 전희진, email: heejin123088@gmail.com, photo: shapeimage_9.jpg, info: [삼성디스플레이] }
-      - { name: 김정민, email: jeongmin@sogang.ac.kr, photo: image_1_1.jpg, info: [Caltech 박사, 부산대학교, 교수] }
-      - { name: 황지예, email: hwangjiye21193@gmail.com, photo: 2013.10.jpg, info: [한국콜마] }
-      - { name: 정다빈, email: ekqls@sogang.ac.kr, photo: 111136.jpg, info: [UT-Austin 박사, 삼성 SDI] }
-      - { name: 이슬기, email: sklee812@hanmail.net, photo: shapeimage_10.jpg, info: [LG 에너지 솔루션] }
-      - { name: 이영로, email: youngrovvv@hanmail.net, photo: shapeimage_4.jpg, info: [SNU 박사과정] }
-      - { name: 임혜상, email: mmmg05@gmail.com, photo: shapeimage_11.jpg, info: [코스맥스] }
-      - { name: 박윤재, email: dbswo9396@hanmail.net, photo: shapeimage_12.jpg, info: [UC-Berkeley 박사, MIT Post-Doc] }
-      - { name: 장인혁, email: sweetlove089@naver.com, photo: shapeimage_13.jpg, info: [UW-Madison 박사과정] }
-      - { name: 정진관, email: erjk0719@hanmail.net, photo: shapeimage_3-2.jpg, info: [LG 에너지 솔루션] }
-      - { name: 배현정, email: olivegr2n@naver.com, photo: shapeimage_5.jpg, info: [UW-Madison 박사과정] }
-      - { name: 전동재, email: leomatt@naver.com, photo: jdj.jpg, info: [LG 에너지 솔루션] }
-      - { name: 송은섭, email: midmay1@naver.com, photo: song-es.jpg, info: [대구경북첨단의료산업진흥재단] }
-      - { name: 최종호, email: cjh19940724@gmail.com, photo: img_0027.jpg, info: [U. of Chicago, 박사과정] }
-      - { name: 김혜솔, email: ihs1008@naver.com, photo: 8e385926-e9a9-47bf-9dbf-026660f3734f.jpg, info: [U. of North Carolina, 박사과정] }
-      - { name: 박서우, email: cindy92596@naver.com, photo: shapeimage_14.jpg, info: [삼성 SDI] }
-      - { name: 신은혁, email: shin.eunhyeok@gmail.com, photo: shin-eh.jpg, info: [삼성 SDI] }
+      - { name: 정현태, email: junght@sogang.ac.kr, photo: shapeimage_6.png, info: [UW-Madison 박사, 한화토탈] }
+      - { name: 이동춘, email: dclee@sogang.ac.kr, photo: shapeimage_7.png, info: [비츠로셀] }
+      - { name: 김유희 (KIST 학연), email: iris1131@nate.com, photo: kimyh.png, info: [코스맥스] }
+      - { name: 박창현, email: arimon@sogang.ac.kr, photo: view_submsg.png, info: [아모레퍼시픽] }
+      - { name: 염다영 (KIST 학연), email: oduaeodo@naver.com, photo: image_2.png, info: [고분자 시험 연구소] }
+      - { name: 진성국 (KIST 학연), email: jinga14@naver.com, photo: image_1.png }
+      - { name: 김민정, email: minjung5683@hanmail.net, photo: shapeimage_8.png, info: [경인양행] }
+      - { name: 전희진, email: heejin123088@gmail.com, photo: shapeimage_9.png, info: [삼성디스플레이] }
+      - { name: 김정민, email: jeongmin@sogang.ac.kr, photo: image_1_1.png, info: [Caltech 박사, 부산대학교, 교수] }
+      - { name: 황지예, email: hwangjiye21193@gmail.com, photo: 2013.10.png, info: [한국콜마] }
+      - { name: 정다빈, email: ekqls@sogang.ac.kr, photo: 111136.png, info: [UT-Austin 박사, 삼성 SDI] }
+      - { name: 이슬기, email: sklee812@hanmail.net, photo: shapeimage_10.png, info: [LG 에너지 솔루션] }
+      - { name: 이영로, email: youngrovvv@hanmail.net, photo: shapeimage_4.png, info: [SNU 박사과정] }
+      - { name: 임혜상, email: mmmg05@gmail.com, photo: shapeimage_11.png, info: [코스맥스] }
+      - { name: 박윤재, email: dbswo9396@hanmail.net, photo: shapeimage_12.png, info: [UC-Berkeley 박사, MIT Post-Doc] }
+      - { name: 장인혁, email: sweetlove089@naver.com, photo: shapeimage_13.png, info: [UW-Madison 박사과정] }
+      - { name: 정진관, email: erjk0719@hanmail.net, photo: shapeimage_3-2.png, info: [LG 에너지 솔루션] }
+      - { name: 배현정, email: olivegr2n@naver.com, photo: shapeimage_5.png, info: [UW-Madison 박사과정] }
+      - { name: 전동재, email: leomatt@naver.com, photo: jdj.png, info: [LG 에너지 솔루션] }
+      - { name: 송은섭, email: midmay1@naver.com, photo: song-es.png, info: [대구경북첨단의료산업진흥재단] }
+      - { name: 최종호, email: cjh19940724@gmail.com, photo: img_0027.png, info: [U. of Chicago, 박사과정] }
+      - { name: 김혜솔, email: ihs1008@naver.com, photo: 8e385926-e9a9-47bf-9dbf-026660f3734f.png, info: [U. of North Carolina, 박사과정] }
+      - { name: 박서우, email: cindy92596@naver.com, photo: shapeimage_14.png, info: [삼성 SDI] }
+      - { name: 신은혁, email: shin.eunhyeok@gmail.com, photo: shin-eh.png, info: [삼성 SDI] }
       - { name: 양재헌, email: quesar@naver.com, photo: 34.jpg }
       - { name: 강범규, email: beomgyu.kang.kor@gmail.com, photo: kang.jpg }
       - { name: 김은철, email: silveriron@sogang.ac.kr, photo: kimeuncheol.jpg }

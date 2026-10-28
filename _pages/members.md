@@ -11,7 +11,7 @@ nav_order: 1
 <style>
   .member-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1.5rem 1rem; margin: 1rem 0 2.5rem; }
   .member-card { text-align: center; font-size: 0.85rem; line-height: 1.4; }
-  .member-card img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 6px; margin-bottom: 0.5rem; }
+  .member-card img { width: 100%; max-width: 160px; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 6px; margin-bottom: 0.5rem; }
   .member-card .name { font-weight: 600; font-size: 0.95rem; }
   .member-card .email { font-size: 0.8rem; white-space: nowrap; }
   @media (max-width: 576px) {
@@ -21,7 +21,7 @@ nav_order: 1
   .member-pi { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; margin: 1rem 0 2.5rem; }
   .member-pi img { width: 260px; max-width: 100%; border-radius: 6px; }
   .member-pi .name { font-size: 1.2rem; font-weight: 600; }
-  .member-section { font-weight: 400; }
+  .member-section { font-weight: 500; }
   .member-group { font-size: 1.25rem; font-weight: 300; margin-top: 1.5rem; }
 </style>
 

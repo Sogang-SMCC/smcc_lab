@@ -7,7 +7,7 @@ nav: false
 ---
 
 <div class="profile float-right" style="max-width: 280px; margin-left: 1.5rem;">
-  <img class="img-fluid z-depth-1 rounded" src="{{ '/assets/img/smcc/members/prof_sung.jpg' | relative_url }}" alt="Prof. Bong June Sung">
+  <img class="img-fluid z-depth-1 rounded" src="{{ '/assets/img/smcc/members/prof_sung.png' | relative_url }}" alt="Prof. Bong June Sung">
 </div>
 
 **Name:** 성봉준 (Bong June Sung)<br>

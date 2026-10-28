@@ -18,7 +18,7 @@ latest_posts:
 
 <div class="row">
   <div class="col-md-6">
-    {% include figure.liquid path="assets/img/smcc/campus.jpg" class="img-fluid rounded z-depth-1" alt="Sogang University" %}
+    {% include figure.liquid path="assets/img/smcc/campus.png" class="img-fluid rounded z-depth-1" alt="Sogang University" %}
   </div>
   <div class="col-md-6 mt-3 mt-md-0">
     <p><strong>Soft Matter Computational Chemistry Lab</strong><br>

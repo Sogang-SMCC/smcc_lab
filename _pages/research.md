@@ -21,15 +21,15 @@ nav_order: 2
 
 <div class="row mt-3">
   <div class="col-sm-6 mt-3">
-    {% include figure.liquid path="assets/img/smcc/research/computer.jpg" class="img-fluid rounded z-depth-1" alt="Multiscale molecular simulations" zoomable=true %}
+    {% include figure.liquid path="assets/img/smcc/research/computer.png" class="img-fluid rounded z-depth-1" alt="Multiscale molecular simulations" zoomable=true %}
   </div>
   <div class="col-sm-6 mt-3">
-    {% include figure.liquid path="assets/img/smcc/research/polymer.jpg" class="img-fluid rounded z-depth-1" alt="Polymer research" zoomable=true %}
+    {% include figure.liquid path="assets/img/smcc/research/polymer.png" class="img-fluid rounded z-depth-1" alt="Polymer research" zoomable=true %}
   </div>
   <div class="col-sm-6 mt-3">
-    {% include figure.liquid path="assets/img/smcc/research/bio.jpg" class="img-fluid rounded z-depth-1" alt="Biophysical chemistry research" zoomable=true %}
+    {% include figure.liquid path="assets/img/smcc/research/bio.png" class="img-fluid rounded z-depth-1" alt="Biophysical chemistry research" zoomable=true %}
   </div>
   <div class="col-sm-6 mt-3">
-    {% include figure.liquid path="assets/img/smcc/research/materials.jpg" class="img-fluid rounded z-depth-1" alt="Materials research" zoomable=true %}
+    {% include figure.liquid path="assets/img/smcc/research/materials.png" class="img-fluid rounded z-depth-1" alt="Materials research" zoomable=true %}
   </div>
 </div>
