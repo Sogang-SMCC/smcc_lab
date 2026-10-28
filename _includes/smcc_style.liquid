@@ -1,4 +1,13 @@
 <style>
+  /* Navbar: show the short lab name so the menu fits on one line (site.title stays the full name) */
+  .navbar-brand.title {
+    font-size: 0;
+  }
+  .navbar-brand.title::after {
+    content: 'SMCC Lab';
+    font-size: 1.25rem;
+  }
+
   /* Page titles (Members, Research, ...) */
   .post-title {
     font-weight: 700;
