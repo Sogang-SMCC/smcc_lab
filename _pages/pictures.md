@@ -19,6 +19,7 @@ albums:
       - [{ f: img_7829.jpg, r: 1.509 }, { f: img_0380.jpg, r: 1.335 }]
       - [{ f: img_7809.jpg, r: 1.371 }, { f: img_7814-1.jpg, r: 0.884 }, { f: img_7818-1.jpg, r: 0.982 }]
   - title: 2024 Spring @Sogang
+    row_width: 70% # as on the old site, the two smaller photos together are narrower than the group photo
     rows:
       - [{ f: 2024-05-22-3.49.49.png, r: 1.768 }]
       - [{ f: 2024-05-22-3.50.57.png, r: 1.141 }, { f: 2024-05-22-3.51.33.png, r: 0.902 }]
