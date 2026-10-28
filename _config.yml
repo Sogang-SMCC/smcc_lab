@@ -213,6 +213,7 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
+  - unused/ # template files this site does not use (kept for reference, not built)
   - AGENTS.md
   - al-folio-upgrade-report.md
   - bin/
