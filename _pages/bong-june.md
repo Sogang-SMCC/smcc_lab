@@ -6,6 +6,12 @@ description: Professor, Department of Chemistry, Sogang University
 nav: false
 ---
 
+<style>
+  article h4 {
+    margin-top: 2.5rem;
+  }
+</style>
+
 <div class="profile float-right" style="max-width: 280px; margin-left: 1.5rem;">
   <img class="img-fluid z-depth-1 rounded" src="{{ '/assets/img/smcc/members/prof_sung.png' | relative_url }}" alt="Prof. Bong June Sung">
 </div>
