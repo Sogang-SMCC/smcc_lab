@@ -14,11 +14,7 @@ latest_posts:
   enabled: false
 ---
 
-<style>
-  .post-title {
-    font-weight: 700;
-  }
-</style>
+{% include smcc_style.liquid %}
 
 <div class="row">
   <div class="col-md-6">
@@ -47,5 +43,4 @@ latest_posts:
   <a href="{{ '/publications/' | relative_url }}" style="color: inherit; font-weight: 400">Selected Publications</a>
 </h2>
 
-{% include smcc_pub_style.liquid %}
 {% include selected_papers.liquid %}

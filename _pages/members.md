@@ -7,6 +7,8 @@ nav: true
 nav_order: 1
 ---
 
+{% include smcc_style.liquid %}
+
 <style>
   .member-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.5rem 1rem; margin: 1rem 0 2.5rem; }
   .member-card { text-align: center; font-size: 0.85rem; line-height: 1.4; }

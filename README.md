@@ -63,12 +63,14 @@
 convert 원본.jpg -auto-orient -strip -resize '1600x1600>' -quality 85 assets/img/smcc/pictures/2027-spring-01.jpg
 ```
 
-**단체사진 앨범 추가**: `_pages/pictures.md` 맨 위 `albums:` 목록의 첫 번째 자리에 추가합니다. 위에 있는 앨범부터 표시됩니다.
+**단체사진 앨범 추가**: `_pages/pictures.md` 맨 위 `albums:` 목록의 첫 번째 자리에 추가합니다. 위에 있는 앨범부터 표시됩니다. `rows`의 한 줄이 화면의 한 줄이고, 사진이 한 장뿐인 줄은 크게 가운데에, 여러 장인 줄은 높이를 맞춰 나란히 놓입니다. `r`은 사진의 가로÷세로 비율입니다 (`identify 파일.jpg`로 크기 확인).
 
 ```yaml
 albums:
   - title: 2027 Spring @Sogang
-    photos: [2027-spring-01.jpg, 2027-spring-02.jpg]
+    rows:
+      - [{ f: 2027-spring-01.jpg, r: 1.5 }] # 단체사진 (크게)
+      - [{ f: 2027-spring-02.jpg, r: 1.33 }, { f: 2027-spring-03.jpg, r: 0.75 }]
 ```
 
 **연구 그림 추가**: `_pages/research.md`의 그림 목록(`<div class="row">` 안)에 블록을 하나 추가합니다. 한 줄에 두 장씩 배치됩니다.
@@ -119,7 +121,7 @@ Publications 페이지는 이 파일에서 자동으로 만들어지고, 연도�
 
 - 첫 줄의 키(`hong2027example`)는 겹치지 않게 `첫저자성+연도+제목첫단어`로 만듭니다.
 - 출판 전 논문은 `journal`, `volume`, `pages` 없이 `note`만 적습니다. 게재되면 `note`를 지우고 저널 정보를 채웁니다.
-- 표시 형식은 `_layouts/bib.liquid`(구조)와 `_includes/smcc_pub_style.liquid`(굵기·색)에서 바꿀 수 있습니다.
+- 표시 형식은 `_layouts/bib.liquid`(구조)와 `_includes/smcc_style.liquid`(굵기·색)에서 바꿀 수 있습니다.
 
 ## 배포
 

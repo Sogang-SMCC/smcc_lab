@@ -4,7 +4,7 @@
   SMCC override of al_folio_core's bib.liquid: renders each entry in the old lab-site format
   124. “Title”, A. Author, B. Author*, Journal 148, 24151 (2026)
   Lab members listed in `bold_authors` (1-based author positions) are bold; Prof. Sung is bold blue.
-  Styles live in _includes/smcc_pub_style.liquid.
+  Styles live in _includes/smcc_style.liquid.
 {%- endcomment -%}
 {%- assign bold_idx = entry.bold_authors | split: ' ' -%}
 <div class="smcc-pub" id="{{ entry.key }}">

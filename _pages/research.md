@@ -7,6 +7,8 @@ nav: true
 nav_order: 2
 ---
 
+{% include smcc_style.liquid %}
+
 "연성 소재 전산화학 연구실"은 컴퓨터 시뮬레이션, 인공지능, 통계열역학, 양자화학을 포함한 여러가지 이론적 방법을 이용하여 재료물리화학, 생물물리화학 등 다양한 분야를 연구하고 있다. 컴퓨터 시뮬레이션 방법으로는 Monte Carlo (MC) 시뮬레이션, Molecular Dynamics 시뮬레이션, Ab Initio Quantum Chemical Method 그리고 Spatial Tessellation을 사용하고 있다. 이론적인 방법으로는 Integral equation theory, Field theoretic method, 그리고 Percolation theory등을 이용하고 있다.
 
 1. 연성 소재 (Soft Matter)

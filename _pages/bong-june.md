@@ -56,7 +56,7 @@ nav: false
 
 #### Selected Publications
 
-{% include smcc_pub_style.liquid %}
+{% include smcc_style.liquid %}
 <div class="publications">
 {% bibliography --group_by none --query @*[selected=true]* %}
 </div>

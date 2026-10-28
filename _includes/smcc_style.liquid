@@ -1,0 +1,48 @@
+<style>
+  /* Page titles (Members, Research, ...) */
+  .post-title {
+    font-weight: 700;
+  }
+
+  /* Publications (see _layouts/bib.liquid) */
+  .smcc-pub {
+    line-height: 1.6;
+  }
+  .smcc-pub .smcc-member {
+    font-weight: 700;
+  }
+  .smcc-pub .smcc-pi {
+    font-weight: 700;
+    color: #0433ff;
+  }
+  html[data-theme='dark'] .smcc-pub .smcc-pi {
+    color: #7aa2ff;
+  }
+  .smcc-pub .smcc-journal {
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  /* Pictures: one-photo rows are large and centered, other rows share one height */
+  .smcc-photo-row {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .smcc-photo-row figure {
+    margin: 0;
+  }
+  .smcc-photo-big {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (max-width: 576px) {
+    .smcc-photo-big {
+      width: 100%;
+    }
+    .smcc-photo-row {
+      gap: 0.5rem;
+    }
+  }
+</style>
