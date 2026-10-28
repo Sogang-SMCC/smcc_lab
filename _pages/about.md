@@ -16,11 +16,39 @@ latest_posts:
 
 {% include smcc_style.liquid %}
 
-<div class="row">
+<style>
+  /* Address block: first line level with the photo's top edge, last line with its bottom edge */
+  .home-intro {
+    margin-bottom: 2.5rem;
+  }
+  .home-intro figure {
+    margin: 0;
+  }
+  .home-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+  .home-address p {
+    margin: 0;
+  }
+  @media (max-width: 767px) {
+    .home-address {
+      margin-top: 1rem;
+    }
+    .home-address p + p {
+      margin-top: 1rem;
+    }
+  }
+</style>
+
+<div class="row home-intro">
   <div class="col-md-6">
     {% include figure.liquid path="assets/img/smcc/campus.png" class="img-fluid rounded z-depth-1" alt="Sogang University" %}
   </div>
-  <div class="col-md-6 mt-3 mt-md-0">
+  <div class="col-md-6 home-address">
     <p><strong>Soft Matter Computational Chemistry Lab</strong><br>
     Ricci Science Hall 1217, 1215<br>
     Department of Chemistry, Sogang University<br>
