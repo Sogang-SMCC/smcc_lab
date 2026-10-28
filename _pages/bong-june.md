@@ -7,34 +7,86 @@ nav: false
 ---
 
 <style>
-  /* Education, Career, Contact sit close together next to the photo, as on the old site */
+  /* Photo on the left, Name~Career on the right with top and bottom edges level, as on the old site */
+  .prof-top {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 2.5rem;
+  }
+  .prof-top .prof-photo {
+    flex: 0 0 auto;
+  }
+  .prof-top .prof-photo img {
+    display: block;
+    height: 230px;
+    width: auto;
+  }
+  .prof-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2rem;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .prof-info p,
+  .prof-info ul {
+    margin: 0;
+  }
+  .prof-info h5 {
+    font-size: 1.05rem;
+    margin: 0 0 0.15rem;
+  }
+  @media (max-width: 767px) {
+    .prof-top {
+      flex-direction: column;
+    }
+    .prof-info {
+      margin: 1rem 0 0;
+    }
+    .prof-top .prof-photo img {
+      height: auto;
+      width: 100%;
+      max-width: 320px;
+      max-height: none;
+    }
+    .prof-info > * + * {
+      margin-top: 0.75rem;
+    }
+  }
+  /* Contact follows right below; Awards, Research Interests, Selected Publications are separate blocks */
   article h4 {
     margin-top: 1rem;
   }
-  /* Awards, Research Interests, Selected Publications are separate blocks */
   article h4.prof-block {
-    clear: both;
     margin-top: 4rem;
   }
 </style>
 
-<div class="profile float-right" style="max-width: 280px; margin-left: 1.5rem;">
-  <img class="img-fluid z-depth-1 rounded" src="{{ '/assets/img/smcc/members/prof_sung.png' | relative_url }}" alt="Prof. Bong June Sung">
+<div class="prof-top">
+  <div class="prof-photo">
+    <img class="z-depth-1 rounded" src="{{ '/assets/img/smcc/members/prof_sung.png' | relative_url }}" alt="Prof. Bong June Sung">
+  </div>
+  <div class="prof-info">
+    <p><strong>Name:</strong> 성봉준 (Bong June Sung)<br>
+    <strong>Major:</strong> 물리화학 (Physical Chemistry)</p>
+    <div>
+      <h5>Education</h5>
+      <ul>
+        <li>B. S. — Seoul National University (1999)</li>
+        <li>M. S. — Seoul National University (2001)</li>
+        <li>Ph. D. — University of Wisconsin-Madison (2006)</li>
+      </ul>
+    </div>
+    <div>
+      <h5>Career</h5>
+      <ul>
+        <li>2006 ~ 2007: Post-Doc at UW-Madison</li>
+        <li>2007 ~ Current: Professor at Sogang University, Chemistry</li>
+      </ul>
+    </div>
+  </div>
 </div>
-
-**Name:** 성봉준 (Bong June Sung)<br>
-**Major:** 물리화학 (Physical Chemistry)
-
-#### Education
-
-- B. S. — Seoul National University (1999)
-- M. S. — Seoul National University (2001)
-- Ph. D. — University of Wisconsin-Madison (2006)
-
-#### Career
-
-- 2006 ~ 2007: Post-Doc at UW-Madison
-- 2007 ~ Current: Professor at Sogang University, Chemistry
 
 #### Contact
 
